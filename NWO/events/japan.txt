@@ -180,9 +180,9 @@ country_event = {
 #New event chain Japan - waiting for approval
 country_event = {
   id = 8007840
-  title = EVT_8007840_NAME #The San Francisco Treaty
-  desc = EVT_8007840_DESC #flavour text Wikipedia
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007840_NAME
+  desc = EVT_8007840_DESC
+  picture = "nwo2_sanfrancisco"
   fire_only_once = yes
 
   trigger = {
@@ -193,7 +193,7 @@ country_event = {
   mean_time_to_happen = { months = 1  }
 
   option = {
-    name = EVT_8007840_A #Don't meddle to much with it. (historical outcome.)
+    name = EVT_8007840_A
     ai_chance = { factor = 99 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -201,7 +201,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007840_B #Try to negotiate our way into a favourable outcome.
+    name = EVT_8007840_B
     ai_chance = { factor = 1 }  
     country_event = 8007841
   }
@@ -210,15 +210,13 @@ country_event = {
 #ahistorical followup
 country_event = {
   id = 8007841
-  title = EVT_8007841_NAME #The San Francisco Treaty Negotiations
-  desc = EVT_8007841_DESC #Eventhough Japan was under occupation of the US at the time, Japan still had some negotiation power during the makeup of the treaty. Before the treaty will be signed by us and the other attendees we could try to steer the treaty into a direction which would be more favourable for us.
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007841_NAME 
+  desc = EVT_8007841_DESC 
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
-  #At first I was like "Let's make an option where Japan claims pre-ww2 borders (Taiwan, Korea ect.) and gest 50 infamy" but then I realized it got nuked like 2 times and under no circumstances would it wager a war against the US so soon after that... if anyone was wondering why that wasn't here like I 'planned' in that issue on Github xP
-
   option = {
-    name = EVT_8007841_A #We will lay claim to the full island of Sakhalin and the Kuril islands
+    name = EVT_8007841_A 
     ai_chance = { factor = 1 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -230,7 +228,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007841_B #We will lay claim to southern Sakhalin and the Kuril islands
+    name = EVT_8007841_B
     ai_chance = { factor = 1 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -241,7 +239,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007841_C #We will lay claim to southern Sakhalin and the southern Kuril islands
+    name = EVT_8007841_C 
     ai_chance = { factor = 1 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -251,7 +249,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007841_D #We will lay claim to the Kuril islands but not Sakhalin
+    name = EVT_8007841_D
     ai_chance = { factor = 1 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -261,7 +259,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007841_E #We will lay claim to just the southern Kuril islands (historical outcome)
+    name = EVT_8007841_E 
     ai_chance = { factor = 95 }
     USA  = { country_event = 8007846 } 
     RUS  = { country_event = 8007843 } 
@@ -269,7 +267,7 @@ country_event = {
   }
 
   option = {
-    name = EVT_8007841_F #We will renounce all our claims on the islands above Hokkaido
+    name = EVT_8007841_F 
     ai_chance = { factor = 1 }
     USA  = { country_event = 8007845  } 
     RUS  = { country_event = 8007844 } 
@@ -280,13 +278,13 @@ country_event = {
 #historical followup
 country_event = {
   id = 8007842
-  title = EVT_8007842_NAME #The San Francisco Treaty Historical Outcome
-  desc = EVT_8007840_DESC #flavour text Wikipedia
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007842_NAME
+  desc = EVT_8007840_DESC
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007842_A #We will sign the treaty as it is.
+    name = EVT_8007842_A 
     1089 = { add_core = JAP }
 
   }
@@ -295,13 +293,13 @@ country_event = {
 #negative outcome Russia
 country_event = {
   id = 8007843
-  title = EVT_8007840_NAME #The San Francisco Treaty
-  desc = EVT_8007843_DESC #Japan has despite our rightfull occupation of Sakhalin and the Kuril islands not renounced their claims in the region.
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007840_NAME 
+  desc = EVT_8007843_DESC 
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007843_A #We are not happy with this
+    name = EVT_8007843_A 
     relation = { who = JAP value = -50 } 
     diplomatic_influence = { who = JAP value = -100 }
   }
@@ -310,13 +308,13 @@ country_event = {
 #positive outcome Russia
 country_event = {
   id = 8007844
-  title = EVT_8007840_NAME #The San Francisco Treaty
-  desc = EVT_8007844_DESC #Japan has agreed to recognize our claims in both Sakhalin and the Kuril Islands
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007840_NAME 
+  desc = EVT_8007844_DESC 
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007844_A #We are pleased
+    name = EVT_8007844_A 
     relation = { who = JAP value = 50 } 
     diplomatic_influence = { who = JAP value = 50 }
     prestige = 5
@@ -326,13 +324,13 @@ country_event = {
 #negative outcome US
 country_event = {
   id = 8007845
-  title = EVT_8007840_NAME #The San Francisco Treaty
-  desc = EVT_8007845_DESC #Japan has renounced all claims to the islands north of Hokkaido held by the Soviet Union, we fear for Soviet influence in japan.
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007840_NAME 
+  desc = EVT_8007845_DESC 
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007844_A #We are saddened by this decision of Japan
+    name = EVT_8007845_A 
     diplomatic_influence = { who = JAP value = -50 }
     USA  = { country_event = 8007826  } 
   }
@@ -341,13 +339,13 @@ country_event = {
 #positive outcome US
 country_event = {
   id = 8007846
-  title = EVT_8007840_NAME #The San Francisco Treaty
-  desc = EVT_8007846_DESC #Japan has declared to keep claim on Soviet islands north of Hokkaido, Japan stands together with us against communism!
-  picture = "nwo2_okinawa" #placeholder, should be -> https://upload.wikimedia.org/wikipedia/commons/e/e2/Yoshida_signs_San_Francisco_Peace_Treaty.jpg
+  title = EVT_8007840_NAME 
+  desc = EVT_8007846_DESC 
+  picture = "nwo2_sanfrancisco"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007846_A #We will reassure Japan's safety for years to come!
+    name = EVT_8007846_A 
     relation = { who = JAP value = 50 } 
     diplomatic_influence = { who = JAP value = 50 }
     USA  = { country_event = 8007826  } 
@@ -357,13 +355,13 @@ country_event = {
 #reaction of japan to refusal withdrawing US in pacific islands
 country_event = {
   id = 8007847
-  title = EVT_8007847_NAME #The US has decided to not hand the Ryukyu islands back to us
+  title = EVT_8007847_NAME 
   desc = EVT_8007847_DESC #
   picture = "nwo2_okinawa"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007847_A #We will claim these islands as they were originally part of Japan
+    name = EVT_8007847_A 
     relation = { who = USA value = -100 } 
     badboy = 5
     1679 = { add_core = JAP }
@@ -371,8 +369,8 @@ country_event = {
     ai_chance = { factor = 10 }
   }
   option = {
-    name = EVT_8007847_B #As specified in the San Franciso treaty these islands were te become US trusteeship, we have no right to claim these islands as our own
-    relation = { who = US value = 100 }
+    name = EVT_8007847_B 
+    relation = { who = USA value = 100 }
     ai_chance = { factor = 90 } 
   }
 }
@@ -380,13 +378,13 @@ country_event = {
 #reaction of japan to refusal withdrawing US in pacific islands again
 country_event = {
   id = 8007848
-  title = EVT_8007848_NAME #The US has decided to not hand the Bonin islands back to us
-  desc = EVT_8007847_DESC #
+  title = EVT_8007847_NAME
+  desc = EVT_8007848_DESC
   picture = "nwo2_okinawa"
   is_triggered_only = yes
 
   option = {
-    name = EVT_8007847_A #We will claim these islands as they were originally part of Japan
+    name = EVT_8007847_A
     relation = { who = USA value = -100 } 
     badboy = 5
     1654 = { add_core = JAP }
@@ -394,8 +392,8 @@ country_event = {
     ai_chance = { factor = 10 }
   }
   option = {
-    name = EVT_8007847_B #As specified in the San Franciso treaty these islands were te become US trusteeship, we have no right to claim these islands as our own
-    relation = { who = US value = 100 } 
+    name = EVT_8007847_B
+    relation = { who = USA value = 100 } 
     ai_chance = { factor = 90 }
   }
 }
